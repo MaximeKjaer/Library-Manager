@@ -26,6 +26,12 @@ Library Manager is an extension for Chrome that automatically downloads your JS 
 - Provide you with script tags and links that are ready to be copy-pasted into your HTML.
 - Provide you with a link to the libary's website so that you quickly can see what's new in the updated version.
 
+**Why would I want to use Google's CDN?**
+
+- You'll be able to reduce the load on your own server a bit.
+- It's free!
+- Google's servers are very fast, distributed all over the world and never go down.
+- Many other websites use it, so chances are the user will already have the file cached.
 
 **I'm worried about the permission that it asks for**
 
