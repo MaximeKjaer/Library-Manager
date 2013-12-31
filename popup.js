@@ -1,5 +1,3 @@
-// Please excuse the overcommenting. The idea is that I want my sister (who is just learning about JS) to be able to read and understand code. I thought that for the sake of transparency, I'd leave them here
-// for anyone else who would like to try to learn from it / understand what is going on.
 
 
 //Preparing to load files from the FileSystem API. See html5rocks.com's tutorial.
