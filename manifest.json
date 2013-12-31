@@ -1,0 +1,37 @@
+{
+ "name": "Library Manager",
+ "version": "1.0",
+ "manifest_version": 2,
+ "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+ 
+ "description": "Library Manager automatically downloads your libraries and provides you with relevant and easily available information about them.",
+ "icons": {
+   "16":  "icon16.png",
+   "48":  "icon48.png",
+   "128": "icon128.png"
+ },
+   "browser_action": {
+	"default_icon": "icon19.png",
+	"default_title": "Library manager",
+	"default_popup": "popup.html"
+  },
+ "background": {
+	"scripts": ["jquery-1.8.2.js", "background.js"]
+ },
+ "offline_enabled": true,
+ "options_page": "options.html",
+ "permissions": [
+  "unlimitedStorage",
+  "clipboardWrite",
+  "*://*.ajax.googleapis.com/*",
+  "*://developers.google.com/*"
+ ],
+ "optional_permissions": [
+	"notifications"
+ ],
+   "web_accessible_resources": [
+		"icon128.png",
+		"icon48.png",
+		"icon19.png"
+  ]
+}

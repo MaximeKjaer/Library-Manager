@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="jquery_joyride/joyride-2.0.1.css">
+<script type="text/javascript" src="jquery_joyride/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="jquery_joyride/jquery.cookie.js"></script>
+<script type="text/javascript" src="jquery_joyride/modernizr.mq.js"></script>
+<script type="text/javascript" src="jquery_joyride/jquery.joyride-2.0.1.js"></script>
+
+
+<script src="popup.js"></script>
+<link rel="stylesheet" type="text/css" href="popup.css">
+
+</head>
+<body>
+<div id="popup"></div>
+
+<div id="container">
+</div>
+	<b id="back"><img src="back.png"/>Back</b>
+	<h2 id="libTitle"></h2>
+	<textarea id="libtext">Loading...</textarea>
+	<center><a href="#" id="download"><input type="button" value="Download"/></a></center>
+	<span id="dlWarning">Please click "Keep" to save the file.</span>
+	
+<ol id="joyRideTipContent">
+  <li><h2>Welcome!</h2>
+  And thank you for installing Library Manager! This is your first visit, and it is possible that everything hasn't quite been loaded yet.<br/>
+  But no worries! Let us take a tour of the extension meanwhile.<br/><br/></li>
+  <li data-id="jquery"><h2>File</h2><h5><i>Offline and easy access to your favorite libraries</i></h5><br><br>
+  The latest version of the libraries you have selected will automatically be stored on what is called the FileSystem,
+  a hidden, sandboxed and protected directory. Clicking on 'File' will allow you to download this libary to your Downloads folder, even when you are offline!<br/>
+  In other words, no need to go to the library's website to grab the latest version, it will be available here whenever you need it.<br/><br/><br/></li>
+  <li data-id="jquery"><h2>Path</h2><h5><i>No more searching for the URL to your libraries</i></h5><br><br>
+  This will copy the URL to Google's CDN copy of the library you want. It's waiting for you in your clipboard.
+  <br><br>Example:<br>
+  <xmp id="path"></xmp>
+  <xmp id="path2"></xmp>
+  <br><br><br></li>
+  <li data-id="jquery"><h2>Tag</h2><h5><i>No more searching for the URL to use in your script tags</i></h5><br/><br/>
+  This will copy a script tag linking to Google's CDN copy of the library you want. It's all ready to copy-paste in your code.
+  <br><br>Example:<br>
+  <code id="tag"></code>
+  <br><br><br></li>
+  <li data-id="jquery"><h2>Site</h2><h5><i>Easily see what's new</i></h5><br/><br/>
+  This is simply a link to the library's website. From there, you can easily check the docs to see what's new, see the new demos...
+  <br><br><br></li>
+  <li><h2>That's it for the popup</h2>Let's take a look at the options page.<br/><br/></li>
+</ol>
+</body>
+</html>

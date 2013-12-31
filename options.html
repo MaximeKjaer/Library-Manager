@@ -1,0 +1,143 @@
+<html>
+<head>
+<link rel="stylesheet" href="options.css">
+
+<link rel="stylesheet" href="jquery_joyride/joyride-2.0.1.css">
+<script type="text/javascript" src="jquery_joyride/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="jquery_joyride/jquery.cookie.js"></script>
+<script type="text/javascript" src="jquery_joyride/modernizr.mq.js"></script>
+<script type="text/javascript" src="jquery_joyride/jquery.joyride-2.0.1.js"></script>
+
+<script type="text/javascript" src="options.js"></script>
+</head>
+<body>
+
+<div class="container">
+<h1 class="title">Options</h1>
+<h1>What libraries would you like to download automatically?</h1>
+
+<table>
+<tr>
+<td>
+<ul id="left">
+	<li>
+			
+			<input type="checkbox" class="lib" id="angularjs">
+			<label for="angularjs">Angular JS</label>	
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="dojo"/>
+			<label for="dojo">Dojo</label>	
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="ext-core"/>
+			<label for="ext-core">Ext Core</label>
+	</li>
+	<li>
+
+			<input type="checkbox" class="lib" id="jquery"/>
+			<label for="jquery">jQuery</label>
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="jquery-ui"/>
+			<label for="jquery-ui">jQuery UI</label>	
+	</li>
+</ul>
+</td>
+<td>
+<ul id="right">
+	<li>
+			<input type="checkbox" class="lib" id="mootools"/>
+			<label for="mootools">MooTools</label>	
+	</li>
+	<li>
+
+			<input type="checkbox" class="lib" id="prototype"/>
+			<label for="prototype">Prototype</label>
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="scriptaculous"/>
+			<label for="scriptaculous">script.aculo.us</label>	
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="swfobject"/>
+			<label for="swfobject">SWFObject</label>	
+	</li>
+	<li>
+			<input type="checkbox" class="lib" id="webfont"/>
+			<label for="webfont">Webfont Loader</label>	
+	</li>
+</ul>
+</td>
+</tr>
+</table>
+
+
+
+<!-- <label for="chrome-frame">
+<input type="checkbox" class="lib" id="chrome-frame"/>
+Chrome Frame</label>
+<br/>
+**** COMING SOON! ****
+-->
+	
+<h1>How often would you like to check for updates?</h1>
+
+	<span id="desc1">Up-to-date</span><span id="desc2">Efficient</span><br/>
+	<input type="range" id="slider" min="15" max="1440" step="5"/><br/>
+	Every <span id="slideValue"></span><br/>
+
+
+	<br/><br/><br/>
+	<h1>How would you like to be notified about new libraries?</h1>
+<ul>
+	<li>
+		<input type="checkbox" class="notification" id="badge"/>
+		<label for="badge" id="badge_label">Badge notifications</label><br/>
+	</li>
+	<li>
+		<input type="checkbox" class="notification" id="desktop"/>
+		<label for="desktop" id="desktop_label">Desktop notifications</label><br/>
+	</li>
+
+</ul>
+
+<br/><br/><br/>
+<a href="#" id="filesystem">View the files stored in the FileSystem</a><br/>
+<a href="#" id="tour">Retake the guided tour</a>
+
+<br/>
+<br/>
+<br/>
+
+<img src="icon16.png"/> <a href="http://www.iconfinder.com/icondetails/34793/128/books_learn_library_school_icon">Library.png</a> by <a href="http://www.studiotwentyeight.net/">Matthew McClintock</a> - <a href="http://www.gnu.org/licenses/dsl.html">Design Science License</a>
+<br/>
+<img src="back.png"/> <a href="http://www.iconfinder.com/icondetails/171489/128/back_icon">Back Icon</a> by <a href="http://www.danilodemarco.com/">Danilo Demarco</a>
+
+
+
+<ol id="joyRideTipContent">
+	<li data-id="left"><h2>Select libraries</h2><br/><br/>
+	Here you can select the libraries that you want to use.
+	The app wil check online if a new version exists, download and show the library you have selected. Unselected libraries will be ignored.<br/><br/></li>
+	
+	<li data-id="slider"><h2>Refresh rate</h2><br/><br/>
+	You can choose how often you want to check for new versions. I would suggest to check every hour.<br/><br/></li>
+	
+	<li data-id="badge_label" data-options="tipLocation:top;"><h2>Badge notification</h2><br/><br/>
+	Select badge notifications to see how many libraries have been updated.<br/><br/></li>
+	
+	<li data-id="desktop_label" data-options="tipLocation:top;"><h2>Desktop notifications</h2><br/><br/>
+	You can choose to be notified on your desktop whenever the app detects a new version of one of the libraries you have chosen.<br/><br/></li>
+	
+	<li data-id="filesystem" data-options="tipLocation:top;"><h2>FileSystem</h2><br/><br/>
+	Click here to see the files stored in the FileSystem API.<br/><br/></li>
+	
+	<li data-button="Done"><h2>That's it</h2><br/>
+	You have seen everything now, and the extension should be completely ready for you!<br/>
+	If you have any questions, please post them in the extension's comments in the Chrome Webstore, or shoot me an email at <a href="mailto:maxime.kjaer@gmail.com">maxime.kjaer@gmail.com</a>
+	<br/><br/></li>
+</ol>
+</div>
+</body>
+</html>
